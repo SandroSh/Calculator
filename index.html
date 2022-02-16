@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/calculator.png">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="main-div">
+        <div class="upper-div">
+            <div class="title">
+                <h1>Calculator</h1>
+
+            </div>
+            <div id="screen">
+                <div data-previous-operand class="previous-opperand"></div>
+                <div data-current-operand class="current-opperand"></div>
+            </div>
+        </div>
+
+        <div class="grid-div">
+
+            <button data-number class="normal-fl">7</button>
+            <button data-number class="normal-fl">8</button>
+            <button data-number class="normal-fl">9</button>
+            <button data-delete class="normal-fl" id="delete-btn">DEL</button>
+            <button data-number class="normal-fl">4</button>
+            <button data-number class="normal-fl">5</button>
+            <button data-number class="normal-fl">6</button>
+            <button data-operation class="normal-fl">+</button>
+            <button data-number class="normal-fl">1</button>
+            <button data-number class="normal-fl">2</button>
+            <button data-number class="normal-fl">3</button>
+            <button data-operation class="normal-fl">-</button>
+            <button data-number class="normal-fl">.</button>
+            <button data-number class="normal-fl">0</button>
+            <button data-operation class="normal-fl">/</button>
+            <button data-operation class="normal-fl">*</button>
+
+        </div>
+        <div class="two-big-buttons-box">
+            <button data-all-clear >RESET</button>
+            <button data-equals >=</button>
+        </div>
+    </div>
+<script src="APP.js"></script>
+</body>
+
+</html>

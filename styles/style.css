@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap");
+@media (max-width: 550px) {
+  body {
+    margin-top: 40px !important;
+  }
+  body .main-div {
+    width: 90vw !important;
+    height: 100vh !important;
+  }
+  body .main-div .upper-div .title h2 {
+    font-size: 2em;
+  }
+  body .main-div .grid-div {
+    width: 100%;
+    grid-gap: 10px !important;
+    padding: 15px 15px 10px 15px !important;
+  }
+  body .main-div .grid-div .normal-fl {
+    font-size: larger !important;
+    width: 100%;
+  }
+  body .main-div .two-big-buttons-box {
+    padding: 5px 15px 15px 15px !important;
+  }
+  body .main-div .two-big-buttons-box button {
+    width: 100% !important;
+  }
+  body .main-div .two-big-buttons-box button:nth-child(1) {
+    margin-right: 10px !important;
+  }
+}
+
+body, body .main-div .upper-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", monospace;
+}
+
+body {
+  margin-top: 50px;
+  background-color: #3a4764;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main-div {
+  width: 500px;
+  height: 530px;
+}
+
+body .main-div .upper-div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main-div .upper-div .title h1 {
+  font-family: "Nunito", monospace;
+  color: white;
+  margin: -10px auto 10px auto;
+  letter-spacing: 10px;
+}
+
+body .main-div .upper-div #screen {
+  height: 6rem;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  background-color: #182034;
+  border-radius: 5px;
+  border-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .main-div .upper-div #screen .current-opperand {
+  color: white;
+  font-size: 3em;
+}
+
+body .main-div .upper-div #screen .previous-opperand {
+  color: white;
+}
+
+body .main-div .grid-div {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 30px 30px 20px 30px;
+  background-color: #232c43;
+  border-radius: 5px 5px 0 0;
+}
+
+body .main-div .grid-div .normal-fl {
+  border-style: none;
+  font-family: "Nunito", monospace;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 32px;
+  background-color: white;
+  color: #444b5a;
+  border-bottom: 3px solid #b4a597;
+}
+
+body .main-div .grid-div .normal-fl:active {
+  background-color: #d9d5d3;
+}
+
+body .main-div .grid-div .normal-fl:hover {
+  background-color: #c2acec;
+}
+
+body .main-div .grid-div #delete-btn {
+  color: white;
+  background-color: #637097;
+  border-color: #3a4764;
+}
+
+body .main-div .grid-div #delete-btn:active {
+  background-color: #404e72;
+}
+
+body .main-div .two-big-buttons-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background-color: #232c43;
+  border-radius: 0 0 5px 5px;
+  padding: 0 30px 30px 30px;
+}
+
+body .main-div .two-big-buttons-box button {
+  width: 210px;
+  height: 55px;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 40px;
+  color: white;
+  font-family: "Nunito", monospace;
+  font-weight: 700;
+  background-color: #d03f2f;
+  border-bottom: 3px solid #93261a;
+}
+
+body .main-div .two-big-buttons-box button:active {
+  background-color: #93261a;
+}
+
+body .main-div .two-big-buttons-box button:nth-child(1) {
+  margin-right: 20px;
+  font-size: 25px;
+  background-color: #637097;
+  border-bottom: 3px solid #404e72;
+}
+
+body .main-div .two-big-buttons-box button:nth-child(1):active {
+  background-color: #404e72;
+}
+/*# sourceMappingURL=style.css.map */

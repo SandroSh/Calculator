@@ -1,0 +1,128 @@
+@import "media-queries";
+%disp-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", monospace;
+}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap");
+body {
+  margin-top: 50px;
+  background-color: hsl(222, 26%, 31%);
+  @extend %disp-flex;
+  flex-direction: column;
+
+  .main-div {
+    width: 500px;
+    height: 530px;
+    .upper-div {
+      @extend %disp-flex;
+      flex-direction: column;
+
+      .title {
+        h1 {
+          font-family: "Nunito", monospace;
+          color: white;
+          margin: -10px auto 10px auto;
+          letter-spacing: 10px;
+        }
+      }
+
+      #screen {
+        height: 6rem;
+        width: 100%;
+        margin: 0 auto 20px auto;
+        padding: 10px;
+        background-color: hsl(224, 36%, 15%);
+        border-radius: 5px;
+        border-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        .current-opperand {
+          color: white;
+          font-size: 3em;
+        }
+        .previous-opperand {
+          color: white;
+        }
+      }
+    }
+
+    .grid-div {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+      padding: 30px 30px 20px 30px;
+      background-color: hsl(223, 31%, 20%);
+      border-radius: 5px 5px 0 0;
+      .normal-fl {
+        border-style: none;
+
+        font-family: "Nunito", monospace;
+        height: 60px;
+        border-radius: 5px;
+        font-size: 32px;
+        background-color: hsl(0, 0, 100%);
+        color: hsl(221, 14%, 31%);
+        border-bottom: 3px solid hsl(28, 16%, 65%);
+        &:active {
+          background-color: hsl(20, 7%, 84%);
+        }
+        &:hover {
+          background-color: hsl(261, 63%, 80%);
+        }
+      }
+      #delete-btn {
+        color: white;
+        background-color: hsl(225, 21%, 49%);
+        border-color: hsl(222, 26%, 31%);
+        &:active {
+          background-color: hsl(224, 28%, 35%);
+        }
+      }
+    }
+    .two-big-buttons-box {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background-color: hsl(223, 31%, 20%);
+      border-radius: 0 0 5px 5px;
+      padding: 0 30px 30px 30px;
+
+      button {
+        width: 210px;
+        height: 55px;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 40px;
+        color: hsl(0, 0, 100%);
+        font-family: "Nunito", monospace;
+        font-weight: 700;
+        background-color: hsl(6, 63%, 50%);
+        border-bottom: 3px solid hsl(6, 70%, 34%);
+        &:active {
+          background-color: hsl(6, 70%, 34%);
+        }
+        &:nth-child(1) {
+          margin-right: 20px;
+          font-size: 25px;
+          background-color: hsl(225, 21%, 49%);
+          border-bottom: 3px solid hsl(224, 28%, 35%);
+          &:active {
+            background-color: hsl(224, 28%, 35%);
+          }
+        }
+      }
+    }
+  }
+}

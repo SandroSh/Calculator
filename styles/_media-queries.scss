@@ -1,0 +1,42 @@
+@media (max-width:550px) {
+   
+       
+    body{
+        margin-top:40px !important;
+        
+        .main-div{
+            .upper-div{
+                .title{
+                     h2{
+                         font-size: 2em;
+                     }
+                }
+            }
+            width:90vw !important;
+            height: 100vh !important;
+            .grid-div{
+                width: 100%;
+                grid-gap: 10px !important;
+                padding: 15px 15px 10px 15px !important;
+                .normal-fl{
+                    font-size:larger !important;
+                    width:100%;
+
+                }
+
+
+                
+            }
+            .two-big-buttons-box{
+                padding: 5px 15px 15px 15px !important;
+                button{
+                    width:100% !important;
+                    &:nth-child(1){
+                        margin-right: 10px !important;
+                    }    
+                    
+                }
+            }
+        }
+    }  
+}
